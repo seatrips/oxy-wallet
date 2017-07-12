@@ -80,14 +80,14 @@ msgstr "Zostatok"
 #: partials/modals/registrationDelegateModal.html:30
 msgid ""
 "Becoming a delegate requires registration. You may choose your own delegate "
-"name, which can be used to promote your delegate. Only the top 101 delegates "
-"are eligible to forge. All fees are shared equally between the top 101 "
+"name, which can be used to promote your delegate. Only the top 201 delegates "
+"are eligible to forge. All fees are shared equally between the top 201 "
 "delegates."
 msgstr ""
 "Stáť sa delegátom vyžaduje registráciu. Môžete si vybrať svoj vlastné meno "
-"pre delegáta, ktoré možno použiť na podporu v hlasovaní. Iba prvých 101 "
+"pre delegáta, ktoré možno použiť na podporu v hlasovaní. Iba prvých 201 "
 "delegátov môžu vytvoriť blok. Všetky poplatky sa rozdelia rovným dielom "
-"medzi prvých 101 delegátov."
+"medzi prvých 201 delegátov."
 
 #: partials/modals/blockInfo.html:7 partials/modals/transactionInfo.html:4
 msgid "Block"
@@ -1122,10 +1122,10 @@ msgstr "Nižšie môžeš nájsť svoju frázu."
 
 #: partials/modals/vote.html:33
 msgid ""
-"You can select up to 33 delegates in one voting turn. Up to 101 delegates in "
+"You can select up to 26 delegates in one voting turn. Up to 201 delegates in "
 "total."
 msgstr ""
-"Môžete si vybrať až 33 delegátov v jednom hlasovacom kole. Z celkových 101 "
+"Môžete si vybrať až 26 delegátov v jednom hlasovacom kole. Z celkových 201 "
 "delegátov."
 
 #: partials/dapps.html:153 partials/dapps.html:230

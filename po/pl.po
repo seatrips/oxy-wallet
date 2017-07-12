@@ -101,12 +101,12 @@ msgstr "Bilans"
 #: partials/modals/registrationDelegateModal.html:30
 msgid ""
 "Becoming a delegate requires registration. You may choose your own delegate "
-"name, which can be used to promote your delegate. Only the top 101 delegates "
-"are eligible to forge. All fees are shared equally between the top 101 "
+"name, which can be used to promote your delegate. Only the top 201 delegates "
+"are eligible to forge. All fees are shared equally between the top 201 "
 "delegates."
 msgstr ""
 "Bycie delegatem wymaga rejestracji. Możesz wybrać swoją własną nazwe "
-"delegata, której potem możesz użyc w jego promocji. Tylko top 101 delegatów "
+"delegata, której potem możesz użyc w jego promocji. Tylko top 201 delegatów "
 "kwalifikuje się do forgowania. Całe prowizje są dzielone po równo wśród top "
 "101 delegatów."
 
@@ -1149,10 +1149,10 @@ msgstr "Możesz znaleźć swoje Passphrase poniżej."
 
 #: partials/modals/vote.html:33
 msgid ""
-"You can select up to 33 delegates in one voting turn. Up to 101 delegates in "
+"You can select up to 26 delegates in one voting turn. Up to 201 delegates in "
 "total."
 msgstr ""
-"Możesz wybrać do 33 delegatów w jednej turze głosowania. Do 101 delegatów "
+"Możesz wybrać do 26 delegatów w jednej turze głosowania. Do 201 delegatów "
 "całkowicie"
 
 #: partials/dapps.html:153 partials/dapps.html:230

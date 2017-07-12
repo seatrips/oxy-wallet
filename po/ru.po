@@ -105,15 +105,15 @@ msgstr "Баланс"
 #: partials/modals/registrationDelegateModal.html:30
 msgid ""
 "Becoming a delegate requires registration. You may choose your own delegate "
-"name, which can be used to promote your delegate. Only the top 101 delegates "
-"are eligible to forge. All fees are shared equally between the top 101 "
+"name, which can be used to promote your delegate. Only the top 201 delegates "
+"are eligible to forge. All fees are shared equally between the top 201 "
 "delegates."
 msgstr ""
 "Чтобы стать делегатом необходимо пройти регистрацию. Вы можете выбрать "
 "выбрать произвольное имя и использовать его в дальнейшем для продвижения "
 "вашего делегата. Вознаграждение за форджинг получают только делегаты, "
 "пользующиеся максимальной поддержкой. Все вознаграждения делятся поровну "
-"между 101 участником из списка лучших.\n"
+"между 201 участником из списка лучших.\n"
 "Стоимость регистрации: {{fee | liskFilter}} OXY."
 
 #: js/controllers/blockchainController.js:41
@@ -1155,11 +1155,11 @@ msgstr "Ваш новый пароль:"
 
 #: partials/modals/vote.html:33
 msgid ""
-"You can select up to 33 delegates in one voting turn. Up to 101 delegates in "
+"You can select up to 26 delegates in one voting turn. Up to 201 delegates in "
 "total."
 msgstr ""
-"За один раз вы можете отдать голос не более чем за 33 делегатов из общего "
-"количества в 101."
+"За один раз вы можете отдать голос не более чем за 26 делегатов из общего "
+"количества в 201."
 
 #: partials/dapps.html:165 partials/dapps.html:242
 msgid "You do not have any applications installed yet."

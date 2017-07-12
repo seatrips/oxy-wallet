@@ -101,8 +101,8 @@ msgid "Balance"
 msgstr "Saldo"
 
 #: partials/modals/registrationDelegateModal.html:30
-msgid "Becoming a delegate requires registration. You may choose your own delegate name, which can be used to promote your delegate. Only the top 101 delegates are eligible to forge. All fees are shared equally between the top 101 delegates."
-msgstr "Om een Delegate te worden is een registratie vereist. Je mag je eigen Delegate naam kiezen, die kan worden gebruikt om je delegate te promoten. Enkel de top 101 Delegates zijn in staat te forgen. Alle fees worden gelijk verdeeld onder de 101 Delegates."
+msgid "Becoming a delegate requires registration. You may choose your own delegate name, which can be used to promote your delegate. Only the top 201 delegates are eligible to forge. All fees are shared equally between the top 201 delegates."
+msgstr "Om een Delegate te worden is een registratie vereist. Je mag je eigen Delegate naam kiezen, die kan worden gebruikt om je delegate te promoten. Enkel de top 201 Delegates zijn in staat te forgen. Alle fees worden gelijk verdeeld onder de 201 Delegates."
 
 #: js/controllers/blockchainController.js:41
 #: js/controllers/forgingController.js:115 partials/modals/blockInfo.html:7
@@ -1050,8 +1050,8 @@ msgid "You can find your passphrase below."
 msgstr "U kunt uw wachtwoordzin hieronder terugvinden."
 
 #: partials/modals/vote.html:33
-msgid "You can select up to 33 delegates in one voting turn. Up to 101 delegates in total."
-msgstr "U kunt tot 33 Delegates selecteren in één stemmingsronde. In totaal kan u tot 101 delegates kiezen."
+msgid "You can select up to 26 delegates in one voting turn. Up to 201 delegates in total."
+msgstr "U kunt tot 26 Delegates selecteren in één stemmingsronde. In totaal kan u tot 201 delegates kiezen."
 
 #: partials/dapps.html:165 partials/dapps.html:242
 msgid "You do not have any applications installed yet."
@@ -1106,8 +1106,8 @@ msgstr "Uw Tweede Wachtwoordzin"
 #~ msgid "add second passphrase"
 #~ msgstr "tweede wachtwoordzin toevoegen"
 
-#~ msgid "Becoming a delegate requires registration. You may choose your own delegate name, which can be used to promote your delegate. Only the top 101 delegates are eligible to forge. All fees are shared equally between the top 101 delegates. Registration costs: {{fee | liskFilter}} OXY."
-#~ msgstr "Om een delegate te worden is registratie vereist. U mag uw eigen afgevaardigde naam kiezen die kan worden gebruikt om uw afgevaardigde te promoten. Enkel de top 101 afgevaardigden komen in aanmerking om te forgen. Alle verheffingen (fees) worden verdeeld tussen de top 101 afgevaardigden. Registratie kosten: {{fee | liskFilter}} OXY."
+#~ msgid "Becoming a delegate requires registration. You may choose your own delegate name, which can be used to promote your delegate. Only the top 201 delegates are eligible to forge. All fees are shared equally between the top 201 delegates. Registration costs: {{fee | liskFilter}} OXY."
+#~ msgstr "Om een delegate te worden is registratie vereist. U mag uw eigen afgevaardigde naam kiezen die kan worden gebruikt om uw afgevaardigde te promoten. Enkel de top 201 afgevaardigden komen in aanmerking om te forgen. Alle verheffingen (fees) worden verdeeld tussen de top 201 afgevaardigden. Registratie kosten: {{fee | liskFilter}} OXY."
 
 #~ msgid "Dapp Store"
 #~ msgstr "Dapp Store"
