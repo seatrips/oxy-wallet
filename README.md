@@ -7,6 +7,11 @@ This repository contains the [AngularJS](https://angularjs.org/) based user-inte
 
 ## Installation
 
+<b>NEW</b><br />
+In the latest version of <i>oxy_manager.bash</i> (found in oxy-node) you can simply run: <br />
+`./oxy_manager.bash install_wallet`
+
+<b>Manually</b><br />
 Install frontend dependencies (will run the `bower install` after the npm instalation):
 
 ```
