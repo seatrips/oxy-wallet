@@ -333,8 +333,8 @@ msgstr "费用"
 #: partials/modals/registrationDelegateModal.html:23
 #: partials/modals/secondPassphraseModal.html:28
 #: partials/modals/sendTransaction.html:31 partials/modals/vote.html:25
-msgid "Fee: {{fee | OXYFilter}} OXY"
-msgstr "费用: {{fee | OXYFilter}} OXY"
+msgid "Fee: {{fee | liskFilter}} OXY"
+msgstr "费用: {{fee | liskFilter}} OXY"
 
 #: partials/forging.html:74
 msgid "Forged Blocks"
