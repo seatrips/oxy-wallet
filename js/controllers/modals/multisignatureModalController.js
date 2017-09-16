@@ -1,6 +1,6 @@
 require('angular');
 
-angular.module('liskApp').controller('multisignatureModalController', ["$scope", "$http", "multisignatureModal", "viewFactory", "userService", "feeService", "gettextCatalog", function ($scope, $http, multisignatureModal, viewFactory, userService, feeService, gettextCatalog) {
+angular.module('liskApp').controller('multisignatureModalController', ['oxyAPI', 'dposOffline', "$scope", "$http", "multisignatureModal", "viewFactory", "userService", "feeService", "gettextCatalog", function (oxyAPI, dposOffline, $scope, $http, multisignatureModal, viewFactory, userService, feeService, gettextCatalog) {
 
     $scope.sending = false;
     $scope.view = viewFactory;
@@ -56,7 +56,7 @@ angular.module('liskApp').controller('multisignatureModalController', ["$scope",
 
             }
             if (buffer.length == 32) {
-                var lisk = require('lisk-js');
+                var lisk = require('shift-js');
                 var address = lisk.crypto.getAddress($scope.member);
                 if ($scope.members[$scope.address] || address == userService.address) {
                     return;
@@ -120,21 +120,27 @@ angular.module('liskApp').controller('multisignatureModalController', ["$scope",
 
         if (!$scope.sending) {
             $scope.sending = true;
-
-            $http.put('/api/multisignatures', data).then(function (response) {
+            var shiftjs = require('shift-js');
+            var multisig = shiftjs.signature.createMultisignature(data.secret, data.secondSecret, data.keysgroup, data.lifetime, data.min);
+            multisig.fee = $scope.fees.multisignature;
+            oxyAPI.transport({
+              nethash: $scope.nethash,
+              port: $scope.port,
+              version: $scope.version
+            })
+              .postTransaction(multisig)
+              .then(function (response) {
                 $scope.sending = false;
-
-                if (response.data.error) {
-                    Materialize.toast('Transaction error', 3000, 'red white-text');
-                    $scope.errorMessage = response.data.error;
-                } else {
-                    if ($scope.destroy) {
-                        $scope.destroy(true);
-                    }
-                    Materialize.toast('Transaction sent', 3000, 'green white-text');
-                    multisignatureModal.deactivate();
+                if ($scope.destroy) {
+                  $scope.destroy(true);
                 }
-            });
+                Materialize.toast('Transaction sent', 3000, 'green white-text');
+                multisignatureModal.deactivate();
+              })
+              .catch(function (e) {
+                Materialize.toast('Transaction error', 3000, 'red white-text');
+                $scope.errorMessage = e.message;
+              });
         }
     }
 
