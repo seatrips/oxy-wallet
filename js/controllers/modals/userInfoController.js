@@ -21,12 +21,16 @@ angular.module('liskApp').controller('userInfoController', ["$scope", "$http", "
         }
         $scope.userIdOld = userId;
         $scope.transactions = { view: false, list: [] };
+        $scope.account = {
+            address: $scope.thisUser.address,
+            publicKey: $scope.thisUser.publicKey,
+        };
         $http.get("/api/accounts", { params: { address: userId }})
         .then(function (resp) {
             if (resp.data.account) {
                 $scope.account = resp.data.account;
             } else {
-                $scope.account = { address: userId, publicKey: null };
+                $scope.account = { address: userId, publicKey: $scope.thisUser.publicKey };
             }
             $http.get("/api/transactions", {
                 params: {
