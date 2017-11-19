@@ -149,7 +149,7 @@ angular.module('liskApp').controller('forgingController', ['$scope', '$rootScope
             }
 
             if (($scope.rank == 0 && rank != 0) || ($scope.rank > 50 && rank <= 50) || ($scope.rank > 201 && rank <= 201) || ($scope.rank <= 50 && rank > 50)) {
-                $scope.graphs.rank.colours = [rank <= 50 ? '#7cb342' : (rank > 101 ? '#d32f2f' : '#ffa000'), '#f5f5f5'];
+                $scope.graphs.rank.colours = [rank <= 50 ? '#7cb342' : (rank > 201 ? '#d32f2f' : '#ffa000'), '#f5f5f5'];
             }
 
             $scope.rank = rank;
