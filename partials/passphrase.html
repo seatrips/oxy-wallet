@@ -7,7 +7,7 @@
             <form class="clearfix pass-window-form" _lpchecked="1" ng-submit="login(pass, rememberPassphrase)">
               <div class="input-field">
                   <input id="password" type="password" ng-model="pass" ng-trim="false" autofocus>
-                  <label for="password"><translate>Your Passphrase</translate></label>
+                  <label for="password"><translate>Your passphrase</translate></label>
                   <span class="pass-error" ng-show="errorMessage">{{errorMessage}}</span>
               </div>
               <div class="input-group">
@@ -29,6 +29,6 @@
             </form>
         </div>
 
-        <div class="pass-footer clearfix">Oxycoin © <span>2016 - {{date | date:'yyyy'}}</span>. All Rights Reserved.</div>
+        <div class="pass-footer clearfix">Oxycoin © <span>{{date | date:'yyyy'}}</span>. All Rights Reserved.</div>
     </div>
 </div>
